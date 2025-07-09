@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}ติดต่อเรา{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/custom-contact.css' %}">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center contact-hero animate__animated animate__fadeInDown">
+            <h1 class="mb-4">ติดต่อเรา</h1>
+            <p class="lead mb-4">หากมีข้อสงสัยหรือข้อเสนอแนะ สามารถติดต่อเราได้ตามช่องทางด้านล่าง</p>
+            <ul class="contact-list animate__animated animate__fadeInUp animate__delay-1s">
+                <li><span class="contact-icon"><i class="fas fa-envelope"></i></span> Email: tle0613828245@gmail.com</li>
+                <li><span class="contact-icon"><i class="fas fa-phone"></i></span> Phone: 0639377109</li>
+                <li><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span> Address: 15 Moo.1, Tambon taket, A.thumphonphisai, sisaket ,33120</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Animate.css CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+{% endblock content %}

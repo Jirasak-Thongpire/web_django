@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}หน้าแรก{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/custom-home.css' %}">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center hero-bg">
+            <h1 class="display-4 mb-4 animate__animated animate__fadeInDown">ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                เว็บไซต์ตัวอย่างสำหรับการใช้งาน Django Template<br>
+                ออกแบบให้เรียบง่าย สบายตา และใช้งานง่าย
+            </p>
+            <a href="/about/" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">เรียนรู้เพิ่มเติมเกี่ยวกับเรา</a>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+            <div class="card shadow animate__animated animate__zoomIn">
+                <div class="card-body">
+                    <h5 class="card-title">ใช้งานง่าย</h5>
+                    <p class="card-text">ออกแบบ UI ให้ใช้งานง่าย เหมาะกับทุกอุปกรณ์</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow animate__animated animate__zoomIn animate__delay-1s">
+                <div class="card-body">
+                    <h5 class="card-title">ทันสมัย</h5>
+                    <p class="card-text">ใช้เทคโนโลยีใหม่ล่าสุดและดีไซน์ที่ทันสมัย</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow animate__animated animate__zoomIn animate__delay-2s">
+                <div class="card-body">
+                    <h5 class="card-title">รองรับทุกแพลตฟอร์ม</h5>
+                    <p class="card-text">แสดงผลได้ดีทั้งบนคอมพิวเตอร์และมือถือ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Animate.css CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}เกี่ยวกับเรา{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/custom-about.css' %}">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center about-hero animate__animated animate__fadeInDown">
+            <h1 class="mb-4">เกี่ยวกับเรา</h1>
+            <p class="lead mb-4">เว็บไซต์นี้สร้างขึ้นเพื่อเป็นตัวอย่างการใช้งาน Django Template<br>เน้นความเรียบง่าย สบายตา และใช้งานง่าย</p>
+            <hr>
+            <p>เราคือทีมพัฒนาที่มุ่งเน้นการสร้างเว็บไซต์ที่ใช้งานง่ายและทันสมัย<br>ขอบคุณที่เยี่ยมชมเว็บไซต์ของเรา!</p>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+            <div class="card about-card shadow animate__animated animate__zoomIn">
+                <div class="card-body text-center">
+                    <div class="about-icon"><i class="fas fa-users"></i></div>
+                    <h5 class="card-title">ทีมงานมืออาชีพ</h5>
+                    <p class="card-text">เรามีทีมงานที่มีประสบการณ์และความเชี่ยวชาญในการพัฒนาเว็บไซต์</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card about-card shadow animate__animated animate__zoomIn animate__delay-1s">
+                <div class="card-body text-center">
+                    <div class="about-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h5 class="card-title">ไอเดียสร้างสรรค์</h5>
+                    <p class="card-text">เรานำเสนอไอเดียใหม่ ๆ เพื่อสร้างสรรค์ผลงานที่โดดเด่น</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card about-card shadow animate__animated animate__zoomIn animate__delay-2s">
+                <div class="card-body text-center">
+                    <div class="about-icon"><i class="fas fa-heart"></i></div>
+                    <h5 class="card-title">ใส่ใจลูกค้า</h5>
+                    <p class="card-text">เราพร้อมให้บริการและดูแลลูกค้าด้วยความจริงใจ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Animate.css CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+{% endblock content %}
